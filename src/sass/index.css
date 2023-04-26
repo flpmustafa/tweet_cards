@@ -1,0 +1,136 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.container {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+div {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ebd8ff;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header h1,
+.header p {
+  color: black;
+}
+
+.card__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.card__items {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 460px;
+  border-radius: 20px;
+  background: linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+}
+.card__items::before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: url(../images/logo.svg);
+}
+.card__items::after {
+  position: absolute;
+  top: 28px;
+  content: url(../images/bgn_picture.svg);
+}
+
+.card__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card__img::before {
+  position: absolute;
+  top: 178px;
+  left: 145px;
+  content: url(../images/ellipse.svg);
+  z-index: 200;
+}
+.card__img::after {
+  position: absolute;
+  top: 214px;
+  content: url(../images/rectangle.svg);
+}
+.card__img--item {
+  margin-top: 178px;
+  margin-bottom: 25px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.card__img--tweets {
+  margin-bottom: 16px;
+}
+.card__img--followers {
+  margin-bottom: 26px;
+}
+.card__img--btn__flw {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px;
+  width: 196px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #373737;
+  background: rgb(235, 216, 255);
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.3108px;
+  border-color: transparent;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

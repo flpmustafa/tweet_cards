@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User tweet card template app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/layout_card.html"></include>
+    <header class="header">
+      <div class="container">
+        <h1>Hello! Below is a social media tweet card template.</h1>
+        <p>
+          Functionality: Implemented the ability to subscribe and unsubscribe to
+          a user. </br> Technologies: HTML, SASS, JavaScript
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <include src="./partials/layout_card.html"></include>
+      </div>
+    </main>
+    <footer>
+      <p>© 2023 | Developed by <a
+                href="https://github.com/flpmustafa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="github"
+              > Mustafa Illia</p>
+    </footer>
   </body>
 </html>
